@@ -1,0 +1,44 @@
+.articleDate {
+	width: fit-content;
+	border-right: 1px solid black;
+	padding-right: 10px;
+}
+
+.articleDetails {
+	padding-left: 10px;
+}
+
+.articleInformation {
+	width: max-content;
+	border: 1px solid black;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.articleImageContainer {
+	display: flex;
+	justify-content: center;
+	max-width: 100;
+}
+
+.articleImageContainer img {
+	min-width: 40%;
+	width: 70vw;
+	max-width: 100%;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.articleTags {
+	margin-top: 35px;
+	margin-bottom: 0;
+}
+
+.articleTags b {
+	font-weight: 600;
+}
+
+article li {
+	margin-bottom: 0.9em;
+}

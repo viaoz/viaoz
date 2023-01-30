@@ -1,0 +1,11 @@
+.logo:hover .first-name-bottom {
+ animation: 4s ColorLoop infinite;
+}
+
+.logo:hover .connecting-dot {
+ animation: 4s ColorLoopBetween infinite;
+}
+
+.logo:hover .last-name-top {
+ animation: 4s ColorLoopReverse infinite;
+}
