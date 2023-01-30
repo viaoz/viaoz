@@ -9,11 +9,13 @@
 }
 
 .articleInformation {
-	width: max-content;
+	width: 100%;
 	border: 1px solid black;
 	padding: 10px;
 	display: flex;
 	flex-direction: row;
+	overflow-wrap: break-word;
+}
 }
 
 .articleImageContainer {
