@@ -1,210 +1,159 @@
-@import '/CSS/navigation.css';
-@import '/CSS/buttons.css';
-@import '/CSS/home-style.css';
-@import '/CSS/project-style.css';
-@import '/CSS/about-me-style.css';
-@import '/CSS/logo-svg.css';
-@import '/CSS/animations.css';
+@import "/CSS/navigation.css";
+@import "/CSS/buttons.css";
+@import "/CSS/home-style.css";
+@import "/CSS/project-style.css";
+@import "/CSS/about-me-style.css";
+@import "/CSS/logo-svg.css";
+@import "/CSS/animations.css";
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/*
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
 
 body {
-	margin: 0;
-	background-color: #ededeb;
+  margin: 0;
+  background-color: #ededeb;
+}
+
+:root {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+
+  --font-size--small: 1.4rem;
+  /* 14px */
+  --font-family--small: 'Ibarra Real Nova', serif;
+  --font-weight--small: normal;
+
+  --font-size--default: 1.6rem;
+  /* 16px */
+  --font-family--default: 'Ibarra Real Nova', serif;
+  --font-weight--default: normal;
+
+  --font-size--medium: 2rem;
+  /* 20px */
+  --font-family--medium: 'Ibarra Real Nova', serif;
+  --font-weight--medium: bold;
+
+  --font-size--large: 2.4rem;
+  /* 24px */
+  --font-family--large: 'Ibarra Real Nova', serif;
+  --font-weight--large: bold;
+
+  --font-size--xlarge: 3.2rem;
+  /* 32px */
+  --font-family--xlarge: 'Josefin Sans', sans-serif;
+  --font-weight--xlarge: bold;
+
+  --font-size--xxlarge: 4rem;
+  /* 40px */
+  --font-family--xxlarge: 'Josefin Sans', sans-serif;
+  --font-weight--xxlarge: bold;
+
+  /* Define your color variables */
+  --primary-color: #9989b0;
+  --primary-color--active: #6c5d95;
+  --primary-color--300: #af9fbd;
+  --primary-color--200: #c5b5cb;
+  --primary-color--100: #dbcbd8;
+
+  --secondary-color: #5b6578;
+  --secondary-color--active: #363f57;
+  --secondary-color--200: #818b9a;
+  --secondary-color--100: #a7b1bc;
+
+  --tertiary-color: #b3aeac;
+  --tertiary-color--active: #918983;
+  --tertiary-color--100: #e6e3e0;
+
+  --background-color: #f6f6f6;
+  --text-color: #333;
+  --text-color--inverse: #ccc;
+
+  --danger-color: #d52941;
+  --warning-color: #fcd581;
+
+  --default-transition: 0.3s;
+}
+
+/* Standard Headings */
+h1 {
+  font-family: var(--font-family--xxlarge);
+  font-size: var(--font-size--xxlarge);
+  font-weight: var(--font-weight--xxlarge);
+}
+
+h2 {
+  font-family: var(--font-family--xlarge);
+  font-size: var(--font-size--xlarge);
+  font-weight: var(--font-weight--xlarge);
+}
+
+h3 {
+  font-family: var(--font-family--large);
+  font-size: var(--font-size--large);
+  font-weight: var(--font-weight--large);
+}
+
+h4 {
+  font-family: var(--font-family--medium);
+  font-size: var(--font-size--medium);
+  font-weight: var(--font-weight--medium);
+}
+
+/* Standard Text */
+body {
+  /* Typography */
+  font-family: var(--font-family--default);
+  font-size: var(--font-size--default);
+  font-weight: var(--font-weight--default);
 }
 
 @media (min-width: 550px) {
-	.container {
-		margin-top: 5%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 10vh;
-		max-width: 1000px;
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: 'ivypresto-display', serif;
-		font-weight: 600;
-		line-height: 1.3;
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	h2 {
-		font-size: 2.5em;
-	}
-
-	h3 {
-		font-size: 2em;
-	}
-
-	h4 {
-		font-size: 1.5em;
-	}
-
-	b {
-		font-weight: bold;
-	}
-
-	:not(h1):not(h2):not(h3):not(h4):not(h5):not(a):not(li b),
-	li {
-		font-family: 'lato', sans-serif;
-		font-size: 1.03em;
-		font-weight: 300;
-		line-height: 1.575em;
-		letter-spacing: 0.035em;
-	}
-
-	li {
-		margin-bottom: 35px; /* same as about me row gap*/
-	}
-
-	li b {
-		font-family: 'lato', sans-serif;
-		font-weight: 600;
-		font-size: 1.03em;
-		line-height: 1.575em;
-		letter-spacing: 0.035em;
-	}
+  .container {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    max-width: 1000px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 900px) {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: 'ivypresto-display', serif;
-		font-weight: 600;
-		line-height: 1.3;
-	}
-
-	h1 {
-		font-size: 2.5m;
-	}
-
-	h2 {
-		font-size: 2.2em;
-	}
-
-	h3 {
-		font-size: 1.9em;
-	}
-
-	h4 {
-		font-size: 1.6em;
-	}
-
-	:not(h1):not(h2):not(h3):not(h4):not(h5):not(a):not(li b),
-	li {
-		font-family: 'lato', sans-serif;
-		font-size: 1em;
-		font-weight: 300;
-		line-height: 1.425em;
-		letter-spacing: 0.035em;
-	}
-
-	li {
-		margin-bottom: 15px; /* same as about me row gap*/
-	}
-
-	li b {
-		font-family: 'lato', sans-serif;
-		font-weight: 600;
-		font-size: 1em;
-		line-height: 1.425em;
-		letter-spacing: 0.035em;
-	}
-
-	@media (max-width: 550px) {
-		.container {
-			margin-top: 5%;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 400px;
-			width: 80%;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: 'ivypresto-display', serif;
-			font-weight: 600;
-			line-height: 1.425;
-		}
-
-		h1 {
-			font-size: 2em;
-		}
-
-		h2 {
-			font-size: 1.7em;
-		}
-
-		h3 {
-			font-size: 1.4em;
-		}
-
-		h4 {
-			font-size: 1.1em;
-		}
-
-		:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(a):not(li b),
-		li {
-			font-family: 'lato', sans-serif;
-			font-size: 1em;
-			font-weight: 300;
-			line-height: 1.325em;
-			letter-spacing: 0.035em;
-		}
-
-		li {
-			margin-bottom: 15px; /* same as about me row gap*/
-		}
-
-		li b {
-			font-family: 'lato', sans-serif;
-			font-weight: 600;
-			font-size: 0.95em;
-			line-height: 1.25em;
-			letter-spacing: 0.035em;
-		}
-	}
+@media (max-width: 550px) {
+  .container {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    width: 80%;
+  }
 }
 
 .underline-link {
-	font-weight: 500;
-	border-bottom: 1px solid #fcacdc;
-	box-shadow: inset 0 -7px 0 #fcacdc;
-	color: black;
-	text-decoration: none;
-	transition: all 0.25s ease-in-out;
-	padding: 2px 2px 0 2px;
+  font-weight: 500;
+  border-bottom: 1px solid #fcacdc;
+  box-shadow: inset 0 -7px 0 #fcacdc;
+  color: black;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  padding: 2px 2px 0 2px;
 }
 
 .underline-link:hover {
-	background-color: #fcacdc;
+  background-color: #fcacdc;
 }
 
 footer {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 10vh;
-	margin-top: 10vh;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 footer p {
-	margin: 0;
+  margin: 0;
 }
