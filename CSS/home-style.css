@@ -13,6 +13,8 @@
 
 .projectContents a {
 	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
 
 .introTextContainer p {
@@ -55,9 +57,9 @@
 	background-color: rgba(255, 255, 255, 0.4);
 	box-shadow: 10px 10px 12px 0 rgba(126, 126, 126, 0.2),
 		-10px -10px 25px 0 rgba(228, 228, 228, 0.3);
-	border-radius: 30px;
+	border-radius: 8px;
 	border: 1px solid whitesmoke;
-	padding: 10%;
+	padding: 2em;
 }
 
 .projectSection {
@@ -68,24 +70,24 @@
 }
 
 @media (min-width: 1200px) {
+	.projectContainer {
+		justify-content: space-between;
+	}
 	.projectContents {
-		width: 60%;
-		padding-left: 10%;
-		justify-self: end;
+		padding-left: 3em;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+	}
+
+	.projectContents button {
+		margin-top: auto;
 	}
 
 	.projectImage {
 		/* Positioning */
 		align-self: left;
-		min-width: 40%;
-		object-fit: scale-down;
-
-		/* Styling */
-		border-radius: 30px;
-		border: 1px solid whitesmoke;
+		width: 60%;
+		object-fit: fill;
 	}
 }
 
@@ -102,18 +104,14 @@
 			-10px -10px 25px 0 rgba(228, 228, 228, 0.3);
 		border-radius: 30px;
 		border: 1px solid whitesmoke;
-		padding: 10%;
+		padding: 2em;
 	}
 
 	.projectImage {
 		/* Positioning */
 		align-self: center;
-		max-width: 100%;
-		object-fit: scale-down;
-
-		/* Styling */
-		border-radius: 30px;
-		border: 1px solid whitesmoke;
+		width: 100%;
+		object-fit: fill;
 	}
 
 	.projectTitle {
@@ -147,6 +145,6 @@
 		justify-self: center;
 	}
 	.introImageContainer img {
-		width: 50%;
+		width: 100%;
 	}
 }
